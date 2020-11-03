@@ -1,7 +1,10 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.setTemplateFormats([
-    "jpg",
-    "njk",
-    "css"
-  ]);
+  eleventyConfig.addWatchTarget("sass");
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addWatchTarget("css", "html");
+  eleventyConfig.addPassthroughCopy("images");
+
+  return {
+    passthroughFileCopy: true
+  }
 };
