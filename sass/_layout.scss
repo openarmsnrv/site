@@ -1,0 +1,30 @@
+body {
+  background-color: #FDF4EC;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px black;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+
+  .logo {
+    margin: 1em;
+  }
+
+  .bottom-border {
+    margin-top: .75em;
+  }
+
+  p {
+    padding: 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

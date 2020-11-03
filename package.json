@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "scss": "node-sass sass/styles.scss -o css",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "node-sass --watch sass/styles.scss -o css",
+    "dev": "yarn run scss ; yarn run watch:eleventy & yarn run watch:sass",
+    "build": "yarn run scss --output-style=compressed ; eleventy"
   }
 }
