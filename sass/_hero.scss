@@ -1,0 +1,25 @@
+section.hero {
+  border-bottom: none;
+
+  img {
+    margin: 2em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin-top: -.45em;
+  }
+
+  p {
+    margin-top: -1em;
+    text-align: center;
+  }
+
+  p.verse-text {
+    margin-top: -4em;
+    font-weight: bold;
+  }
+}
