@@ -28,3 +28,17 @@
     padding-bottom: 2em;
   }
 }
+
+@media (min-width: $desktop) {
+  .class-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .class-list li:last-child {
+    .class-detail {
+      padding-bottom: 7em;
+    }
+  }
+}

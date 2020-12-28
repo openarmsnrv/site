@@ -9,13 +9,6 @@ section {
   margin-bottom: 2em;
   padding-bottom: 2em;
 
-  .logo {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .bottom-border {
     margin-top: .75em;
   }
@@ -31,4 +24,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $desktop) {
+  body {
+    padding: 0 2em;
+  }
 }
