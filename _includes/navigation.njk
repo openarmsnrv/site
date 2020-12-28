@@ -1,0 +1,55 @@
+<div id="menu-icon-shape">
+  <div id="menu-icon">
+    <div id="top" class="nav-bar"></div>
+    <div id="middle" class="nav-bar"></div>
+    <div id="bottom" class="nav-bar"></div>
+  </div>
+</div>
+
+<div id="overlay-nav">
+  <div id="nav-content">
+    <ul>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  (function() {
+    setupMenu();
+  })();
+
+  let navExpanded = false;
+
+  function toggleMenu() {
+    if (navExpanded) {
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      navExpanded = false;
+    } else {
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${window.scrollY}px`;
+      navExpanded = true;
+    }
+
+    document.getElementById('menu-icon-shape').classList.toggle('active');
+
+    let navBarItems = document.getElementsByClassName('nav-bar');
+    for (let item of navBarItems) {
+        item.classList.toggle('active');
+    }
+
+    document.getElementById('overlay-nav').classList.toggle('active');
+  }
+
+  function setupMenu() {
+    let menuIcon = document.getElementById('menu-icon-shape');
+    menuIcon.onclick = toggleMenu;
+  }
+</script>
