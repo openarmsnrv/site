@@ -20,7 +20,7 @@ section {
     justify-content: space-around;
     width: 100%;
 
-    svg {
+    svg.illustration {
       padding-top: 4em;
       width: 200px;
       height: 200px;
@@ -34,7 +34,7 @@ section {
     }
 
     .small-details {
-      svg {
+      svg.illustration {
         width: 100px;
         height: 100px;
       }
@@ -65,20 +65,16 @@ ul {
     .details {
       flex-direction: row;
 
-      svg {
+      svg.illustration {
         width: 400px;
         height: 400px;
       }
 
       .small-details {
-        svg {
+        svg.illustration {
           width: 200px;
           height: 200px;
         }
-      }
-
-      .details-content {
-        flex-direction: row;
       }
     }
   }
