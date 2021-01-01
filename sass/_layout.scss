@@ -178,6 +178,10 @@ footer {
           height: 300px;
         }
       }
+
+      &.success {
+        flex-direction: column;
+      }
     }
   }
 
