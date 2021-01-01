@@ -36,6 +36,10 @@
     justify-content: center;
   }
 
+  .class-detail {
+    max-width: 400px;
+  }
+
   .class-list li:last-child {
     .class-detail {
       padding-bottom: 7em;

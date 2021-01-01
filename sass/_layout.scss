@@ -66,8 +66,54 @@ header {
   }
 }
 
+footer {
+  background-color: #535251;
+  color: #FDF4EC;
+  padding: 2em;
+
+  ul > li {
+    padding-bottom: .5em;
+  }
+
+  div {
+    padding-bottom: 2em;
+  }
+
+  img {
+    border-radius: 5%;
+  }
+
+  a {
+    color: #FDF4EC;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+
+  .icon {
+    width: 10px;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  p.cta {
+    font-size: 1.25em;
+    margin: 2em 0;
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
 @media (min-width: $desktop) {
-  body {
+  .main-content {
     padding: 0 2em;
   }
 
