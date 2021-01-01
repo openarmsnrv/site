@@ -26,9 +26,11 @@
   .staff-grid {
     padding: 0 2em;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .staff {
-    margin-bottom: 7em;
+    margin-bottom: 10em;
   }
 }
