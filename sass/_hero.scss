@@ -39,7 +39,7 @@ section.hero {
   p.verse {
     font-size: 1.1em;
   }
-  
+
   p.verse-text {
     margin-top: -4em;
     font-weight: bold;
@@ -74,6 +74,10 @@ section.hero {
 
       svg {
         height: 100px;
+      }
+
+      p.verse {
+        font-size: 1em;
       }
 
       p.verse-text {

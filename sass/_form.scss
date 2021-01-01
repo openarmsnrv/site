@@ -1,0 +1,64 @@
+form {
+  width: 100%;
+  padding: 2em;
+}
+
+form p {
+  padding: 0 0 1em 0;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form button {
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 0;
+  color: black;
+  font-size: 1em;
+  font-weight: 200;
+  padding: .5em;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-width: 6px;
+}
+
+@media (min-width: $desktop) {
+  form {
+    margin: 0 auto;
+    padding: 0;
+    width: 450px;
+
+    button {
+      width: 50%;
+    }
+
+    p:last-child {
+      text-align: center;
+    }
+  }
+
+  input,
+  textarea {
+    padding: .25em;
+  }
+}

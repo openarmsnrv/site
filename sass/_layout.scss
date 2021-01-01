@@ -69,7 +69,7 @@ header {
 footer {
   background-color: #535251;
   color: #FDF4EC;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 
   ul > li {
     padding-bottom: .5em;
@@ -93,6 +93,10 @@ footer {
     width: 10px;
   }
 
+  .footer div:last-child {
+    padding-bottom: 0;
+  }
+
   p {
     font-family: 'Montserrat', sans-serif;
     font-size: .8em;
@@ -110,6 +114,33 @@ footer {
       text-decoration: underline;
     }
   }
+}
+
+.contact {
+  padding-top: 2em;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.map {
+  width: 100%;
+}
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:500px;
+  width:100%
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none !important;
+  height:500px;
+  width:100%;
 }
 
 @media (min-width: $desktop) {
@@ -153,5 +184,30 @@ footer {
     h1 {
       font-size: 6em;
     }
+  }
+  
+  footer {
+    padding-bottom: 0;
+
+    div {
+      padding-bottom: 1em;
+    }
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-column-gap: 4em;
+    max-width: 1400px;
+
+    .meta {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  }
+
+  .map {
+    margin-top: -8em;
+    padding-bottom: 2em;
   }
 }
