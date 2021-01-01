@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Arms</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Primary Meta Tags -->
+  <title>{% if title.length %} {{title}}{% endif %}</title>
+  <meta name="title" content="Open Arms">
+  <meta name="description" content="">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://openarmsnrv.com/">
+  <meta property="og:title" content="Open Arms Child Care Center">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://openarmsnrv.com/images/meta-hero.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://openarmsnrv.com/">
+  <meta property="twitter:title" content="Open Arms Childcare Center">
+  <meta property="twitter:description" content="T">
+  <meta property="twitter:image" content="https://openarmsnrv.com/images/meta-hero.jpg">
+  
+  <link rel="icon"  href="{{ '/images/favicon.png' | url}}" />
+
   <link href="{{ '/css/styles.css' | url }}" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
