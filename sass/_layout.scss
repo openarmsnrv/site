@@ -203,7 +203,6 @@ footer {
     display: grid;
     grid-template-columns: 2fr repeat(3, 1fr);
     grid-column-gap: 4em;
-    max-width: 1400px;
 
     .meta {
       grid-column: 1 / -1;
@@ -214,5 +213,11 @@ footer {
   .map {
     margin-top: -8em;
     padding-bottom: 2em;
+  }
+}
+
+@media (min-width: $desktop-2xl) {
+  .class-list {
+    max-width: 1200px;
   }
 }
